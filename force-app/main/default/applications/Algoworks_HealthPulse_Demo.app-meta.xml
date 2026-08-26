@@ -89,7 +89,6 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Order</tabs>
     <tabs>Prescription__c</tabs>
-    <tabs>standard-EmailTemplate</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Algoworks_X_HealthPulse_Demo_UtilityBar</utilityBar>
 </CustomApplication>
