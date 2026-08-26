@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Drafts an AI-generated email response grounded in live Case, Order, and Prescription data via Prompt Builder.</description>
+    <label>Draft AI Response Email</label>
+    <lightningWebComponent>draftAIResponseEmail</lightningWebComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningWebComponent</type>
+</QuickAction>

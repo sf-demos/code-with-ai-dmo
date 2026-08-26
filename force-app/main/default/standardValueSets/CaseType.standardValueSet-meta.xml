@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Delivery questions</fullName>
+        <default>false</default>
+        <label>Delivery questions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prescription Status questions</fullName>
+        <default>false</default>
+        <label>Prescription Status questions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Delivery Issues</fullName>
+        <default>false</default>
+        <label>Delivery Issues</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Travelers</fullName>
+        <default>false</default>
+        <label>Travelers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Address changes</fullName>
+        <default>false</default>
+        <label>Address changes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </standardValue>
+</StandardValueSet>

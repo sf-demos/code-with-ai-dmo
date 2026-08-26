@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>V0x2ONcF53pCmr6k6nSAWrZ80UlG52zc2LMM877n8VE=_1</activeVersionIdentifier>
+    <description>Generates context-aware, personalized email responses for HealthPulse patient cases based on live Order and Prescription records.</description>
+    <developerName>HealthPulse_Customer_Email_Draft</developerName>
+    <masterLabel>HealthPulse Customer Email Draft</masterLabel>
+    <overridable>false</overridable>
+    <templateVersions>
+        <content>You are a highly empathetic and professional patient support specialist at HealthPulse, a global leader in Continuous Health Monitoring (CHM) and smart medical sensor technology.
+
+Your task is to write a warm, professional, and helpful email response to the patient regarding their support inquiry.
+
+### Context:
+- Patient Name: {!$Input:Case.Account.FirstName}
+- Inquiry Subject: {!$Input:Case.Subject}
+- Inquiry Type: {!$Input:Case.Type}
+- Inquiry Description: {!$Input:Case.Description}
+
+### Record Details:
+1. Related Order Details:
+   - Order Number: {!$Input:Order.OrderNumber}
+   - Current Shipping Status: {!$Input:Order.Current_Status__c}
+   - Estimated Delivery Date: {!$Input:Order.Expected_ETA__c}
+   - Carrier: {!$Input:Order.Carrier__c}
+   - Tracking Number: {!$Input:Order.Tracking_Number__c}
+
+2. Related Prescription Details:
+   - Prescription Number: {!$Input:Prescription.Prescription_Number__c}
+   - Medication / Sensor System: {!$Input:Prescription.Medication_Name__c}
+   - Prescribing Physician: {!$Input:Prescription.Prescribing_Doctor__c}
+   - Status: {!$Input:Prescription.Status__c}
+   - Expiration Date: {!$Input:Prescription.Expiration_Date__c}
+
+### Instructions:
+- If the Case Type is &quot;Delivery questions&quot; or &quot;Delivery Issues&quot;, provide the patient with their current order status, expected delivery date, carrier, and tracking number. Reassure them their package is progressing.
+- If the Case Type is &quot;Prescription Status questions&quot;, inform them gently that their prescription is expired, specify the expiration date, and guide them to contact their prescribing physician ({!$Input:Prescription.Prescribing_Doctor__c}) for an updated Rx renewal so their next shipment can proceed.
+- If the Case Type is &quot;Address changes&quot; or other inquiries, offer clear assistance and invite them to provide any necessary details.
+- Output clean HTML format using &lt;p&gt;, &lt;ul&gt;, &lt;li&gt;, and &lt;strong&gt; tags.
+- End with a courteous closing from &quot;HealthPulse Care &amp; Support Team&quot;.</content>
+        <inputs>
+            <apiName>Case</apiName>
+            <definition>SOBJECT://Case</definition>
+            <referenceName>Input:Case</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Order</apiName>
+            <definition>SOBJECT://Order</definition>
+            <referenceName>Input:Order</referenceName>
+            <required>false</required>
+        </inputs>
+        <inputs>
+            <apiName>Prescription</apiName>
+            <definition>SOBJECT://Prescription__c</definition>
+            <referenceName>Input:Prescription</referenceName>
+            <required>false</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT54Mini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>V0x2ONcF53pCmr6k6nSAWrZ80UlG52zc2LMM877n8VE=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

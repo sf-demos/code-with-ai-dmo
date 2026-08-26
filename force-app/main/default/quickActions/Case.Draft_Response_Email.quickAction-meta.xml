@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Drafts a context-aware email response based on Case Type and related Order/Prescription records.</description>
+    <label>Draft Response Email</label>
+    <lightningWebComponent>draftResponseEmail</lightningWebComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningWebComponent</type>
+</QuickAction>

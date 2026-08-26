@@ -1,0 +1,13 @@
+<p>Dear {!Contact.FirstName},</p>
+<p>Thank you for contacting HealthPulse Support regarding your shipment.</p>
+<p>Here are the latest details on your active order:</p>
+<ul>
+  <li><strong>Order Number:</strong> {!Order.OrderNumber}</li>
+  <li><strong>Current Status:</strong> {!Order.Current_Status__c}</li>
+  <li><strong>Expected Delivery Date (ETA):</strong> {!Order.Expected_ETA__c}</li>
+  <li><strong>Carrier:</strong> {!Order.Carrier__c}</li>
+  <li><strong>Tracking Number:</strong> {!Order.Tracking_Number__c}</li>
+</ul>
+<p>Your package is on its way and scheduled to arrive by the estimated delivery date above.</p>
+<p>If you have any further questions or need address modifications, please reply directly to this email.</p>
+<p>Best regards,<br/><strong>HealthPulse Customer Support Team</strong></p>

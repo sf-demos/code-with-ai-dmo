@@ -1,0 +1,13 @@
+<p>Dear {!Contact.FirstName},</p>
+<p>Thank you for reaching out to HealthPulse Support regarding your prescription status.</p>
+<p>We reviewed your account records and found the following details:</p>
+<ul>
+  <li><strong>Prescription Number:</strong> {!Prescription__c.Prescription_Number__c}</li>
+  <li><strong>Medication / Device:</strong> {!Prescription__c.Medication_Name__c}</li>
+  <li><strong>Prescribing Physician:</strong> {!Prescription__c.Prescribing_Doctor__c}</li>
+  <li><strong>Current Status:</strong> <span style="color: #c23934; font-weight: bold;">{!Prescription__c.Status__c}</span></li>
+  <li><strong>Expiration Date:</strong> {!Prescription__c.Expiration_Date__c}</li>
+</ul>
+<p>Because this prescription has expired, a renewal from your healthcare provider is required before your next HealthPulse sensor order can be processed. We recommend contacting <strong>{!Prescription__c.Prescribing_Doctor__c}</strong> to request an updated prescription.</p>
+<p>Please let us know if you have any questions or if you would like our team to assist with doctor outreach.</p>
+<p>Warm regards,<br/><strong>HealthPulse Clinical Support Team</strong></p>
