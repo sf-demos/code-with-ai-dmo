@@ -12,6 +12,10 @@
     {
       "files": "*.{cmp,page,component}",
       "options": { "parser": "html" }
+    },
+    {
+      "files": "*.xml",
+      "options": { "printWidth": 120 }
     }
   ]
 }
