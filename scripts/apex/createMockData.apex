@@ -1,7 +1,17 @@
 /**
  * @description Idempotent Apex script to seed mock demo records for the HealthPulse Case Email Drafting POC.
  * Run in target org: sf apex run --file scripts/apex/createMockData.apex --target-org demo_org
+ *
+ * CONFIGURATION — set this before running:
  */
+String patientEmail = null; // TODO: Set this to the patient's email address before running, e.g. 'patient@example.com'
+
+if (String.isBlank(patientEmail)) {
+    throw new IllegalArgumentException(
+        'patientEmail must be set to a valid email address before running this script. ' +
+        'Update the variable at the top of createMockData.apex and re-run.'
+    );
+}
 
 System.debug('--- START SEEDING MOCK DATA FOR HEALTHPULSE POC ---');
 
@@ -17,7 +27,6 @@ Id personAccRecordTypeId = !personAccRecordTypes.isEmpty() ? personAccRecordType
 System.debug('Person Account RecordTypeId: ' + personAccRecordTypeId);
 
 // 2. Query or Create Patient Person Account
-String patientEmail = 'pranav.gandhi@algoworks.com';
 List<Account> existingAccounts = [
     SELECT Id, Name, PersonEmail
     FROM Account
