@@ -1,0 +1,533 @@
+{
+  "version": 1,
+  "skills": {
+    "automation-flow-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/automation-flow-generate/SKILL.md",
+      "computedHash": "66e4a2c928491183e70685148970982a7d5c1b79323a45ffcd655acebdffd9f4"
+    },
+    "design-systems-slds-apply": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/design-systems-slds-apply/SKILL.md",
+      "computedHash": "7adabfb0d3942e8f74ef0b7aec52c7162f1536dc5ab5aea0e7c7d3117a8eb58d"
+    },
+    "design-systems-slds-validate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/design-systems-slds-validate/SKILL.md",
+      "computedHash": "688a7e34a8850fbdfc39d37d0ca7e59101883435dfb4682fb01fbbe5bebe600e"
+    },
+    "dx-apexguru-scan": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dx-apexguru-scan/SKILL.md",
+      "computedHash": "626bc4d15948abad3b10593fa9d6ee2ca2bb189ea477de5d56f5ffd001b4e4c5"
+    },
+    "dx-app-analytics-query": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dx-app-analytics-query/SKILL.md",
+      "computedHash": "421ba61a50b0ab849de6eb2d6a7cb1cf438ec2e3593ccfcdf079196501937c74"
+    },
+    "dx-code-analyzer-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dx-code-analyzer-configure/SKILL.md",
+      "computedHash": "d84ade2c7b72efbb2d68948fa42e15b081c742de31b034f2f0c374e515d678a0"
+    },
+    "dx-code-analyzer-custom-rule-create": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dx-code-analyzer-custom-rule-create/SKILL.md",
+      "computedHash": "446f50d3951e941134fb8b2d0a51de2979cc4dd76437ba647af41061493972ac"
+    },
+    "dx-code-analyzer-run": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dx-code-analyzer-run/SKILL.md",
+      "computedHash": "8f0ad63ba10d23edd046e866c45be4583850ba3cf792c1ad5cbea04ed6821418"
+    },
+    "dx-org-manage": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dx-org-manage/SKILL.md",
+      "computedHash": "8e561b68409cb062dea41b1d2214e4c945db48de403881324fe27784b6f5cfcb"
+    },
+    "dx-org-permission-set-assign": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dx-org-permission-set-assign/SKILL.md",
+      "computedHash": "9d5eb0da8b488999bc652d886057aa9adaea670683309845e815dfb238c994e0"
+    },
+    "dx-org-shape-manage": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dx-org-shape-manage/SKILL.md",
+      "computedHash": "d8f31e8b82de3bad3ac37f1bcefcefeee5128614c0865f8ccbb0b16a2fba9615"
+    },
+    "experience-portal-create": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/experience-portal-create/SKILL.md",
+      "computedHash": "1a4dce130eae7a129256e056c2ba91fc3234ea7d11c3344499c5a33fb2153b34"
+    },
+    "external-diagram-mermaid-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/external-diagram-mermaid-generate/SKILL.md",
+      "computedHash": "4dfdefe4511ee01ae2c5be1ca61ae2c8455c7fb0b6c3316f2df504d469f96185"
+    },
+    "integration-connectivity-connected-app-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/integration-connectivity-connected-app-configure/SKILL.md",
+      "computedHash": "3872500295d3bb80cf39ea964b7d5f918f41a234097bc804f972dcad935898bb"
+    },
+    "integration-connectivity-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/integration-connectivity-generate/SKILL.md",
+      "computedHash": "9598f6a7d30090b05025f9237c0d93c686aaf2fada0179a35a2a20dcacb85bd6"
+    },
+    "integration-eventing-cdc-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/integration-eventing-cdc-configure/SKILL.md",
+      "computedHash": "d2da788c2eb46a00da6d5dd9ada4754037a40034855d188b21ecb43ec5e80e0c"
+    },
+    "integration-eventing-subscription-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/integration-eventing-subscription-configure/SKILL.md",
+      "computedHash": "001c993cad6cb368784fc0d951a2a3cfbb0a825db90aae9521833984bf4bf791"
+    },
+    "omnistudio-callable-apex-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/omnistudio-callable-apex-generate/SKILL.md",
+      "computedHash": "e8f8c311df577ad75219920f078c224f910534becc2eda469917d8dc0d6f14a0"
+    },
+    "omnistudio-datamapper-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/omnistudio-datamapper-generate/SKILL.md",
+      "computedHash": "5d42ff0309f9ebb7f8e5848e232f67b84e743fb3ce70ddc1c75c39744c52cae3"
+    },
+    "omnistudio-datapacks-deploy": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/omnistudio-datapacks-deploy/SKILL.md",
+      "computedHash": "7822c301860a45be7fcd621c10a70eae0a66234bc7bcc15e8e461a09d3fc4c13"
+    },
+    "omnistudio-dependencies-analyze": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/omnistudio-dependencies-analyze/SKILL.md",
+      "computedHash": "735e3829fbae2bf7ac21293dd1abb8eb4ad1aff3beac41525b9d1adf86676a1f"
+    },
+    "omnistudio-epc-catalog-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/omnistudio-epc-catalog-generate/SKILL.md",
+      "computedHash": "ea5933550d360a88fa496369e41a4b44ca0063c459e446eb3ef7a6272754da9b"
+    },
+    "omnistudio-flexcard-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/omnistudio-flexcard-generate/SKILL.md",
+      "computedHash": "6760757d9356ea1370a8550982f35bd157c15ca941da9b167d521e882099315f"
+    },
+    "omnistudio-integration-procedure-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/omnistudio-integration-procedure-generate/SKILL.md",
+      "computedHash": "a7a0128523b00435f59836c122feaf1ecf4220a1a3fd86316b2eefe5d328f95d"
+    },
+    "omnistudio-omniscript-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/omnistudio-omniscript-generate/SKILL.md",
+      "computedHash": "b6151c4aae02072e3b39d28c9360f4e3db9b3faadb2b98ec0af5f42495d7bc98"
+    },
+    "platform-apex-anonymous-run": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/builder/salesforce-development/skills/platform-apex-anonymous-run/SKILL.md",
+      "computedHash": "bcb53b92eb40461de27bfd21a5bbd2a207293d22a627a560dcef61922a5f55fe"
+    },
+    "platform-apex-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-apex-generate/SKILL.md",
+      "computedHash": "55a41d2deb4d47c3070afe1cd29feeb453b915b501c656a27e39e0d2b4b8a155"
+    },
+    "platform-apex-logs-debug": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-apex-logs-debug/SKILL.md",
+      "computedHash": "ee148f27ab5e23e9c7877c36ea2bfe4ebe09772eb3d9aa1a1df468a1b95c9e09"
+    },
+    "platform-apex-test-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-apex-test-generate/SKILL.md",
+      "computedHash": "d805ba6eec00f465a5a34fb529a488bfd89b282a0b74f5242fcbcc3dbc92d5f6"
+    },
+    "platform-apex-test-run": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-apex-test-run/SKILL.md",
+      "computedHash": "fd53568871d013d29597febe45bcc5ea4ec0017f25ba9d52fed075fafcd89a2c"
+    },
+    "platform-custom-application-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-custom-application-generate/SKILL.md",
+      "computedHash": "5ae64823e12d10662c1034542ab5026d2096c2f6a1e1847d6be0cae6be16b116"
+    },
+    "platform-custom-field-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-custom-field-generate/SKILL.md",
+      "computedHash": "af119c821598eb2cdb007476db4b31dfa6bb3586a416f571191cb810213cb0c2"
+    },
+    "platform-custom-lightning-type-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-custom-lightning-type-generate/SKILL.md",
+      "computedHash": "dcd4b9f953ef7952a180810aa5be591df583538540a137c178fdee6cc02a449e"
+    },
+    "platform-custom-metadata-type-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-custom-metadata-type-generate/SKILL.md",
+      "computedHash": "90074a4debf0bd6733c7f2ba77ab53a6172d6d0f2dce0e08368bdc80c397477b"
+    },
+    "platform-custom-object-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-custom-object-generate/SKILL.md",
+      "computedHash": "c167ca97845a0d345fa0c05209eff38b192d825379e719e12ad2aeb45a157d70"
+    },
+    "platform-custom-report-type-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-custom-report-type-generate/SKILL.md",
+      "computedHash": "2bf96da5e5a8d9d45b72236163742b8712e99808471575bc1da266eeb9a7e6ef"
+    },
+    "platform-custom-setting-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-custom-setting-generate/SKILL.md",
+      "computedHash": "01e8c097f2166f82a8643d147925e332303f3de001e73852be13390901c90da8"
+    },
+    "platform-custom-tab-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-custom-tab-generate/SKILL.md",
+      "computedHash": "9698007debe31d119d7e4cd8f02cb2e22ca3cfbc7c383e1b77c62a393725691c"
+    },
+    "platform-data-and-tooling-api-context-get": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-data-and-tooling-api-context-get/SKILL.md",
+      "computedHash": "950289bd26649713b0c545794283a448c28c0b48d2f9e175c5ab34efd454a51f"
+    },
+    "platform-data-manage": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-data-manage/SKILL.md",
+      "computedHash": "6e176461a44a89a45f7645190e506ebe25ef39a5883d57ee646645f3035f05da"
+    },
+    "platform-datamask-run": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-datamask-run/SKILL.md",
+      "computedHash": "84638c8802860f3dfb1e555ffcbbe4512a6c32a5da93bb653a9094a5ad5a5faa"
+    },
+    "platform-dataspace-access-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-dataspace-access-configure/SKILL.md",
+      "computedHash": "65240e8a457cb9df57d790cc1026cd003973d05448ee3813771811e8136f7eac"
+    },
+    "platform-deploy-validate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/builder/salesforce-development/skills/platform-deploy-validate/SKILL.md",
+      "computedHash": "3778f8f82d5a0bc1699b691db4febe3053d004be950a65eba6c4c23f4f150263"
+    },
+    "platform-destructive-deploy": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/builder/salesforce-development/skills/platform-destructive-deploy/SKILL.md",
+      "computedHash": "fa398be47e677a36e425c86d7e7619f6bb43ad6af8b10c7a94ab67c94f09888f"
+    },
+    "platform-docs-get": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-docs-get/SKILL.md",
+      "computedHash": "e18c45e95949a5e648b7659e9f86be4d5a92d475e493297818a3af3424a9bff9"
+    },
+    "platform-environment-validate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/builder/salesforce-development/skills/platform-environment-validate/SKILL.md",
+      "computedHash": "09f1b6fb08662206585fbfea133504f5c5e8c6f694e4dbfbc8330ef84b56a4c7"
+    },
+    "platform-flexipage-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-flexipage-generate/SKILL.md",
+      "computedHash": "a4a81646183cecd9fb518bd4ec36b0fd7abca298da9986f4f713978f4b94b52b"
+    },
+    "platform-lightning-app-coordinate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-lightning-app-coordinate/SKILL.md",
+      "computedHash": "15729d126c500c24c639f3e7747097066c2360a46a2f09a5ae321de821560d53"
+    },
+    "platform-lightning-type-widget-coordinate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-lightning-type-widget-coordinate/SKILL.md",
+      "computedHash": "48255d7106a217cabc95ce56f9879032e8e73f869510e9ac4cde09730a4cd2a1"
+    },
+    "platform-list-view-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-list-view-generate/SKILL.md",
+      "computedHash": "56cc6473c8616fac9f53197aef7984bce1f56abfd6830f90c68e508f6b6ad3d9"
+    },
+    "platform-lsp-integrate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/builder/salesforce-development/skills/platform-lsp-integrate/SKILL.md",
+      "computedHash": "0ce99737d3c641fabbd08b70df4d282a055cfee0c39f591aa29eb1c94db68c71"
+    },
+    "platform-manifest-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/builder/salesforce-development/skills/platform-manifest-generate/SKILL.md",
+      "computedHash": "b08426e355a02724fcabd3c277fc0c41d54df50b8501f85a98ec000ac0d441e4"
+    },
+    "platform-mcp-tool-widget-coordinate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-mcp-tool-widget-coordinate/SKILL.md",
+      "computedHash": "9fbfaf104774fb0ada6d1827aa8ac034ebef22fc95128ee578a2e9ad0925ba78"
+    },
+    "platform-metadata-api-context-get": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-metadata-api-context-get/SKILL.md",
+      "computedHash": "acc9d0e272dde653aafd1edc4d8ca3ce993e037b9eecfde9edfe1c4787391fa9"
+    },
+    "platform-metadata-deploy": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-metadata-deploy/SKILL.md",
+      "computedHash": "e019b8304bd5a65213d45adf8d5d6455bf44d87f5752b6d573be3e5055be3b3d"
+    },
+    "platform-metadata-retrieve": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-metadata-retrieve/SKILL.md",
+      "computedHash": "ee48489d7c1d2f2df212e3f2120feaf36256447788d66f185281a295c3c50249"
+    },
+    "platform-models-api-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-models-api-configure/SKILL.md",
+      "computedHash": "26eddc02bab1bedf2a94f80f5dc1664c1b11f40f04c45bc69aca24c546a7fa22"
+    },
+    "platform-permission-set-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-permission-set-generate/SKILL.md",
+      "computedHash": "e8a1e09110566a684672d6d051ea3aff20eb3baff3119a3ae7ef3829cfeb3f3d"
+    },
+    "platform-policy-rule-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-policy-rule-generate/SKILL.md",
+      "computedHash": "180febbfc625a834b470139b267a321caf37b8dfe9e72f71ff6c5043fec95969"
+    },
+    "platform-quick-deploy": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/builder/salesforce-development/skills/platform-quick-deploy/SKILL.md",
+      "computedHash": "496901a894641f0f94b802cbd4d85c29fc9a95412baecd321f448f9c4cffc5b8"
+    },
+    "platform-report-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-report-generate/SKILL.md",
+      "computedHash": "ea27e5e8056ae88ef66eb281f3bc9c56b0ee261e1b707ffac419a066df3ba801"
+    },
+    "platform-salesforce-connect-adapter-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-salesforce-connect-adapter-generate/SKILL.md",
+      "computedHash": "c173afbe14d9abd382e581446f9b7a20ff3e80c7d74c40b91969a892e0ed3f36"
+    },
+    "platform-sandbox-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-sandbox-configure/SKILL.md",
+      "computedHash": "5b0e94b630347623b7911bb69c902d279068d288cdd7067d123d4b4cde76db70"
+    },
+    "platform-sharing-owd-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-sharing-owd-configure/SKILL.md",
+      "computedHash": "0e385f92f016527051bd6e144e5fbc8cd0502f8c051a4d8050db10b9366eea1b"
+    },
+    "platform-sharing-rules-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-sharing-rules-generate/SKILL.md",
+      "computedHash": "adeff4a9fafad949c5895af657d256afb07e8f68eddd8d66eeb5190e1dae5386"
+    },
+    "platform-soql-query": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-soql-query/SKILL.md",
+      "computedHash": "62dad80bdf56b25865e4b50b15f79dd356327c395063410e018e6401f3670e53"
+    },
+    "platform-tracing-agentforce-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-tracing-agentforce-configure/SKILL.md",
+      "computedHash": "f4e7579d6bd5535e9de19f500a4f1621a58c04a12e400e44d5ac46f6ec3c1e01"
+    },
+    "platform-tracing-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-tracing-configure/SKILL.md",
+      "computedHash": "1b091c4abd9a3a14be3a557e309ab44f97e8ae618ffe7c5d684710174a24ce12"
+    },
+    "platform-trial-org-create": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-trial-org-create/SKILL.md",
+      "computedHash": "0caf64d90c3d4a0670d2d2a8c7d7548ebcffcca5026e486efe63262d37bce5aa"
+    },
+    "platform-trust-archive-manage": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-trust-archive-manage/SKILL.md",
+      "computedHash": "8960a24675c929e11bba32b872cd760b3963a2cf06bc65f8bb9c168a36d317fe"
+    },
+    "platform-validation-rule-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-validation-rule-generate/SKILL.md",
+      "computedHash": "b203c77e9a19fcaa72387dd0ca4a843edb77476d7a958c0c224dd80f73a357e5"
+    },
+    "platform-value-set-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-value-set-generate/SKILL.md",
+      "computedHash": "1835fb241825c60264afe9d69ecdd9feb2553c827a1db385930eed0e34099cd6"
+    },
+    "platform-widget-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-widget-generate/SKILL.md",
+      "computedHash": "b929b51d1098cd6b2dffcecdcdb0e6e0c666d18c4b9fb7fabd821f40d0c06c61"
+    },
+    "sales-agentforce-pipeline-management-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/sales-agentforce-pipeline-management-configure/SKILL.md",
+      "computedHash": "ef144385a5e3c3b97998aa31272dced78584e1fcb0f62103f19dbc9a3e857cd7"
+    },
+    "service-agentforce-channel-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-agentforce-channel-configure/SKILL.md",
+      "computedHash": "9eedd6caf5184459d9f18a4464c86bdf36e8fa2248d49cfaeea85f66f04d7ac1"
+    },
+    "service-agentforce-human-escalation-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-agentforce-human-escalation-configure/SKILL.md",
+      "computedHash": "9c240bfa9fd0c39542032ced76456bb95504e4ad5c9a929d152353c8abfc6a55"
+    },
+    "service-catalog-template-coordinate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-catalog-template-coordinate/SKILL.md",
+      "computedHash": "4e6953eee478a4015c1038408538d2ece4da2ef41237828c002c29d48a83724b"
+    },
+    "service-concierge-portal-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-concierge-portal-generate/SKILL.md",
+      "computedHash": "a188dcc0b2ccd2bd5692b759b03ee4f607296fb664120fd883af8c788469f553"
+    },
+    "service-de-channel-activate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-de-channel-activate/SKILL.md",
+      "computedHash": "e7677b940bb9fb5f2b54a743f8e55c7932ff67a22071252fa3b7d40880f5c334"
+    },
+    "service-de-channel-consent-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-de-channel-consent-configure/SKILL.md",
+      "computedHash": "aeecc6df0b1ed8d2fdeef3f28ecd0e2fd9eefd537ce27ca68e205ee540c7709d"
+    },
+    "service-de-channel-create": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-de-channel-create/SKILL.md",
+      "computedHash": "b4ce8caff197f14ca396664542a538306f8cc86522b36f52db5c8e6ec4f26a78"
+    },
+    "service-de-channel-routing-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-de-channel-routing-configure/SKILL.md",
+      "computedHash": "c351dd96581c54e81bf03524710db3265b2af055b4930b9993567685ac20b9d2"
+    },
+    "service-de-headless-channel-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-de-headless-channel-configure/SKILL.md",
+      "computedHash": "52ac37bda97155f16b45e6272dab82ac6cd85a928a8ce6f6d7ec9ce0bff9e5bc"
+    },
+    "service-de-waba-integrate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-de-waba-integrate/SKILL.md",
+      "computedHash": "7af77683c9a38905741ad0764f18de49122bdfd033d2b72febd559cd3ad76e3c"
+    },
+    "service-digital-engagement-channel-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-digital-engagement-channel-configure/SKILL.md",
+      "computedHash": "409a03613041224c572eed03da813ce3d3b8698d062d0dbd364fae9abc546b60"
+    },
+    "service-digital-engagement-deployment-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-digital-engagement-deployment-configure/SKILL.md",
+      "computedHash": "dea6c81e6e544af591efe994755b258ec5fabb3b65581ffb78be639aa3ca0c90"
+    },
+    "service-digital-engagement-messaging-site-integrate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-digital-engagement-messaging-site-integrate/SKILL.md",
+      "computedHash": "a240b00bc140b910393227957c5cba73691fa7a58077ab102bf68d3f94230eed"
+    },
+    "service-email-to-case-configure": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-email-to-case-configure/SKILL.md",
+      "computedHash": "209d4f486148861c2a6a136cb97e1e3d74f83a82c01806f4cc018e20980972a6"
+    }
+  }
+}

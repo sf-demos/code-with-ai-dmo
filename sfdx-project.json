@@ -8,5 +8,17 @@
   "name": "code",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "67.0"
+  "sourceApiVersion": "67.0",
+  "replacements": [
+    {
+      "filename": "force-app/main/default/settings/Case.settings-meta.xml",
+      "stringToReplace": "{{EMAIL_TO_CASE_ADDRESS}}",
+      "replaceWithEnv": "EMAIL_TO_CASE_ADDRESS"
+    },
+    {
+      "filename": "force-app/main/default/settings/Case.settings-meta.xml",
+      "stringToReplace": "{{EMAIL_TO_CASE_OWNER_USERNAME}}",
+      "replaceWithEnv": "EMAIL_TO_CASE_OWNER_USERNAME"
+    }
+  ]
 }
