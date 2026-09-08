@@ -12,7 +12,20 @@
         <apexClass>CaseEmailDraftController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>CaseTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CaseTriggerHanlder</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <description>Grants permissions for HealthPulse Email Draft POC (Prescription object, Order custom fields, CaseEmailDraftController class).</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Order.Carrier__c</field>

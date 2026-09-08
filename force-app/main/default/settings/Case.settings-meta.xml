@@ -26,7 +26,6 @@
             <createTask>false</createTask>
             <emailAddress>{{EMAIL_TO_CASE_ADDRESS}}</emailAddress>
             <isPermsetControlled>false</isPermsetControlled>
-            <isVerified>true</isVerified>
             <routingName>{{EMAIL_TO_CASE_ADDRESS}}</routingName>
             <saveEmailHeaders>false</saveEmailHeaders>
         </routingAddresses>

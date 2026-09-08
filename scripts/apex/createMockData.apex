@@ -4,7 +4,7 @@
  *
  * CONFIGURATION — set this before running:
  */
-String patientEmail = null; // TODO: Set this to the patient's email address before running, e.g. 'patient@example.com'
+String patientEmail = 'harshank.bansal@algoworks.com'; // TODO: Set this to the patient's email address before running, e.g. 'patient@example.com'
 
 if (String.isBlank(patientEmail)) {
     throw new IllegalArgumentException(
@@ -70,6 +70,10 @@ if (!existingAccounts.isEmpty()) {
 }
 
 Id patientContactId = patient.PersonContactId;
+if (patientContactId != null) {
+    update new Contact(Id = patientContactId, Active__c = true);
+    System.debug('Marked Patient Contact as Active__c = true: ' + patientContactId);
+}
 
 // 3. Create or Update Mock Order
 List<Order> existingOrders = [
@@ -149,7 +153,6 @@ demoCases.add(new Case(
     AccountId = patient.Id,
     ContactId = patientContactId,
     Subject = 'Where is my replacement sensor shipment? Need ETA',
-    Type = 'Delivery questions',
     Status = 'New',
     Priority = 'Medium',
     Origin = 'Email',
@@ -164,7 +167,6 @@ demoCases.add(new Case(
     AccountId = patient.Id,
     ContactId = patientContactId,
     Subject = 'Pharmacy says my sensor prescription is expired - please check',
-    Type = 'Prescription Status questions',
     Status = 'New',
     Priority = 'High',
     Origin = 'Email',
@@ -179,7 +181,6 @@ demoCases.add(new Case(
     AccountId = patient.Id,
     ContactId = patientContactId,
     Subject = 'Need to update home address for future orders',
-    Type = 'Address changes',
     Status = 'New',
     Priority = 'Low',
     Origin = 'Email',
@@ -187,6 +188,21 @@ demoCases.add(new Case(
         'I am moving at the end of this month and would like to update my primary shipping address for all future HealthPulse sensor deliveries.\n\n' +
         'Please let me know how I can confirm my new address and ensure future automated refills are shipped to the correct location.\n\n' +
         'Best regards,\nSarah Jenkins'
+));
+
+// Case 4: Unclassified Incoming Email (Eligible for AI Trigger Classification)
+demoCases.add(new Case(
+    AccountId = patient.Id,
+    ContactId = patientContactId,
+    Subject = 'Sensor package arrived damaged in the mail',
+    Type = null,
+    Status = 'New',
+    Priority = 'High',
+    Origin = 'Email',
+    Description = 'Hello HealthPulse Support,\n\n' +
+        'My sensor package arrived this afternoon but the box was severely crushed and the sensor applicator is cracked.\n\n' +
+        'Can you please send out a replacement delivery?\n\n' +
+        'Thank you,\nSarah Jenkins'
 ));
 
 insert demoCases;

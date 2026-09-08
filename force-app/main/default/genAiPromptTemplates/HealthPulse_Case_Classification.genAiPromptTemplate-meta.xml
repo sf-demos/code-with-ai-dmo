@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>V0x2ONcF53pCmr6k6nSAWrZ80UlG52zc2LMM877n8VE=_1</activeVersionIdentifier>
+    <description>Classifies incoming HealthPulse patient support cases based on email content into a valid Case Type JSON.</description>
+    <developerName>HealthPulse_Case_Classification</developerName>
+    <masterLabel>HealthPulse Case Classification</masterLabel>
+    <overridable>false</overridable>
+    <templateVersions>
+        <content>You are an intelligent AI case classification specialist at HealthPulse, a global leader in Continuous Health Monitoring (CHM) and smart medical sensor technology.
+
+Your task is to analyze the patient email inquiry and classify it into exactly one of the valid HealthPulse Case Types.
+
+### Context:
+- Email Subject: {!$Input:Case.Subject}
+- Email Content / Description: {!$Input:Case.Description}
+
+### Valid Case Types:
+1. &quot;Delivery questions&quot; - Questions regarding shipping status, ETA, delivery tracking, or package location.
+2. &quot;Delivery Issues&quot; - Issues with missing, damaged, delayed, or lost sensor shipments.
+3. &quot;Prescription Status questions&quot; - Inquiries about prescription expiration, doctor authorizations, pharmacy renewals, or sensor refills.
+4. &quot;Address changes&quot; - Requests to change shipping or residential address.
+5. &quot;Travelers&quot; - Questions about traveling with continuous health monitors, airport security, or sensor travel kits.
+6. &quot;Others&quot; - Any other inquiry that does not fit into the categories above.
+
+### Instructions:
+- Carefully evaluate the email subject and description.
+- Select exactly one matching Type from the valid Case Types list above.
+- You must output ONLY a valid JSON object without markdown code blocks, backticks, or extra commentary.
+
+### JSON Output Format:
+{
+  &quot;Type&quot;: &quot;&lt;Valid Case Type&gt;&quot;
+}</content>
+        <inputs>
+            <apiName>Case</apiName>
+            <definition>SOBJECT://Case</definition>
+            <referenceName>Input:Case</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT54Mini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>V0x2ONcF53pCmr6k6nSAWrZ80UlG52zc2LMM877n8VE=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
