@@ -6,6 +6,6 @@
     <name>Case: Delivery Questions</name>
     <style>none</style>
     <subject>Update regarding your HealthPulse Order #{!Order.OrderNumber} - Delivery Status &amp; ETA</subject>
-    <type>html</type>
-    <uiType>SFX</uiType>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
 </EmailTemplate>

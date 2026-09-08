@@ -6,6 +6,6 @@
     <name>Case: Prescription Status</name>
     <style>none</style>
     <subject>Action Required: HealthPulse Prescription #{!Prescription__c.Prescription_Number__c} Status Update</subject>
-    <type>html</type>
-    <uiType>SFX</uiType>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
 </EmailTemplate>
