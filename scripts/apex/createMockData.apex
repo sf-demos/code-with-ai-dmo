@@ -4,12 +4,13 @@
  *
  * CONFIGURATION — set this before running:
  */
-String patientEmail = 'harshank.bansal@algoworks.com'; // TODO: Set this to the patient's email address before running, e.g. 'patient@example.com'
+String patientEmail = 'active.patient.test@algoworks.com'; // TODO: Set this to the patient's email address before running, e.g. 'patient@example.com'
+String inactivePatientEmail = 'inactive.patient.test@algoworks.com'; // Email address for the inactive patient account
 
-if (String.isBlank(patientEmail)) {
+if (String.isBlank(patientEmail) || String.isBlank(inactivePatientEmail)) {
     throw new IllegalArgumentException(
-        'patientEmail must be set to a valid email address before running this script. ' +
-        'Update the variable at the top of createMockData.apex and re-run.'
+        'patientEmail and inactivePatientEmail must be set before running this script. ' +
+        'Update the variables at the top of createMockData.apex and re-run.'
     );
 }
 
@@ -73,6 +74,54 @@ Id patientContactId = patient.PersonContactId;
 if (patientContactId != null) {
     update new Contact(Id = patientContactId, Active__c = true);
     System.debug('Marked Patient Contact as Active__c = true: ' + patientContactId);
+}
+
+// 2b. Query or Create Inactive Patient Person Account
+List<Account> existingInactiveAccounts = [
+    SELECT Id, Name, PersonEmail
+    FROM Account
+    WHERE PersonEmail = :inactivePatientEmail
+    LIMIT 1
+];
+
+Account inactivePatient;
+if (!existingInactiveAccounts.isEmpty()) {
+    inactivePatient = [
+        SELECT Id, Name, PersonEmail, PersonContactId
+        FROM Account
+        WHERE Id = :existingInactiveAccounts[0].Id
+        LIMIT 1
+    ];
+    System.debug('Existing Inactive Patient Person Account found: ' + inactivePatient.Id);
+} else {
+    inactivePatient = new Account();
+    if (personAccRecordTypeId != null) {
+        inactivePatient.RecordTypeId = personAccRecordTypeId;
+    }
+    inactivePatient.FirstName = 'Robert';
+    inactivePatient.LastName = 'Taylor (Inactive)';
+    inactivePatient.PersonEmail = inactivePatientEmail;
+    inactivePatient.PersonMobilePhone = '(555) 987-6543';
+    inactivePatient.BillingCountry = 'United States';
+    inactivePatient.BillingStreet = '456 Elm Street';
+    inactivePatient.BillingCity = 'Austin';
+    inactivePatient.BillingState = 'Texas';
+    inactivePatient.BillingPostalCode = '73301';
+    insert inactivePatient;
+
+    inactivePatient = [
+        SELECT Id, Name, PersonEmail, PersonContactId
+        FROM Account
+        WHERE Id = :inactivePatient.Id
+        LIMIT 1
+    ];
+    System.debug('Created Inactive Patient Person Account: ' + inactivePatient.Id + ' with PersonContactId: ' + inactivePatient.PersonContactId);
+}
+
+Id inactiveContactId = inactivePatient.PersonContactId;
+if (inactiveContactId != null) {
+    update new Contact(Id = inactiveContactId, Active__c = false);
+    System.debug('Marked Inactive Patient Contact as Active__c = false: ' + inactiveContactId);
 }
 
 // 3. Create or Update Mock Order
@@ -142,8 +191,8 @@ if (!existingRx.isEmpty()) {
     System.debug('Created new Prescription: ' + mockRx.Id);
 }
 
-// 5. Clean up old demo Cases for this patient to prevent clutter
-delete [SELECT Id FROM Case WHERE AccountId = :patient.Id];
+// 5. Clean up old demo Cases for active and inactive patients to prevent clutter
+delete [SELECT Id FROM Case WHERE AccountId IN (:patient.Id, :inactivePatient.Id)];
 
 // 6. Create Demo Cases
 List<Case> demoCases = new List<Case>();
@@ -203,6 +252,20 @@ demoCases.add(new Case(
         'My sensor package arrived this afternoon but the box was severely crushed and the sensor applicator is cracked.\n\n' +
         'Can you please send out a replacement delivery?\n\n' +
         'Thank you,\nSarah Jenkins'
+));
+
+// Case 5: Ineligible Case (Inactive Contact - Should NOT be classified by AI Trigger)
+demoCases.add(new Case(
+    AccountId = inactivePatient.Id,
+    ContactId = inactiveContactId,
+    Subject = 'Sensor inquiry from inactive patient account',
+    Type = null,
+    Status = 'New',
+    Priority = 'Low',
+    Origin = 'Email',
+    Description = 'Hello HealthPulse Support,\n\n' +
+        'My patient profile is currently inactive, but I wanted to inquire about re-enrolling in continuous health monitoring.\n\n' +
+        'Thank you,\nRobert Taylor'
 ));
 
 insert demoCases;
